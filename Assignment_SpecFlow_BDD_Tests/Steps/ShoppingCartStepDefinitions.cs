@@ -42,7 +42,7 @@ public class ShoppingCartStepDefinitions
     [When(@"I search for lowest price item")]
     public void WhenISearchForLowestPriceItem()
     {
-        
+        _cartPage.FindLowestPriceItem();
     }
 
     [When(@"I am able to remove the lowest price item from my cart")]
