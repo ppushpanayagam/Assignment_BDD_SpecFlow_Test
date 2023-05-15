@@ -10,7 +10,6 @@ namespace Assignment_SpecFlow_BDD_Tests.Hooks
     public class Hooks
     {
         private readonly IObjectContainer _container;
-        private IWebDriver Driver;
         public Hooks(IObjectContainer container)
         {
             _container = container;
@@ -19,7 +18,7 @@ namespace Assignment_SpecFlow_BDD_Tests.Hooks
         public void BeforeScenario()
         {
             IWebDriver driver = new ChromeDriver();
-            Driver.Manage().Window.Maximize();
+            driver.Manage().Window.Maximize();
             _container.RegisterInstanceAs<IWebDriver>(driver);
         }
 
