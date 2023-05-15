@@ -10,15 +10,23 @@ public class CartPage
         this.driver = driver;
     }
 
+    By ListOfCartItems = By.XPath("//form/table/tbody/tr");
     public int VerifyAddedItemsList()
     {
         Thread.Sleep(2000);
-        var elements = driver.FindElements(By.XPath("//form/table/tbody/tr")).Count;
+        var elements = driver.FindElements(ListOfCartItems).Count;
 
         return elements;
     }
 
+    private By RemoveItemButton = By.XPath("//form/table/tbody/tr[1]/td[1]/a");
     public CartPage RemoveLowestPriceItem()
+    {
+        driver.FindElement(RemoveItemButton).Click();
+        return this;
+    }
+
+    public CartPage FindLowestPriceItem()
     {
         var list = new List<int>();
         string price = "//form/table/tbody/tr[item]/td[6]/span";
@@ -29,12 +37,7 @@ public class CartPage
             
             var value = priceText.Replace("$", "");
             Console.WriteLine("************"+ value);
-            //list.Add(value);
         }
-        //Console.Write("*****************"+list);
-        
-        string element = "//form/table/tbody/tr[1]/td[1]/a";
-        driver.FindElement(By.XPath(element)).Click();
         return this;
     }
 }

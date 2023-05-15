@@ -16,6 +16,7 @@ public class HomePage
         return this;
     }
 
+    private By CartMenuLink = By.XPath("//a[contains(text(), 'Cart')]");
     public HomePage AddItemsToCart()
     {
         string elements = "//div[@class='columns-3']/ul/li[item]/div/a[2]";
@@ -30,7 +31,7 @@ public class HomePage
 
     public CartPage ClickCartMenuLink()
     {
-        driver.FindElement(By.XPath("//a[contains(text(), 'Cart')]")).Click();
+        driver.FindElement(CartMenuLink).Click();
         return new CartPage(driver);
     }
 }
