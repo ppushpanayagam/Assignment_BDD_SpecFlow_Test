@@ -12,11 +12,10 @@ public class ExtentReport
     public static ExtentTest _Scenario;
 
     public static string dir = AppDomain.CurrentDomain.BaseDirectory;
-    public static string testOutPutPath = dir.Replace("bin/Debug/net 6.0", "TestResults");
+    public static string testOutPutPath = dir.Replace("bin/Debug/netcoreapp3.1", "TestResults");
 
     public static void ExtentReportInIt()
     {
-        Console.Write("***************************"+dir);
         var htmlReporter = new ExtentHtmlReporter(testOutPutPath);
         htmlReporter.Config.ReportName = "Automation Test Report";
         htmlReporter.Config.DocumentTitle = "Shopping Cart Report";

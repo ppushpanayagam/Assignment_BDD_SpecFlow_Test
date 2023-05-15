@@ -22,11 +22,12 @@ namespace Assignment_SpecFlow_BDD_Tests.Hooks
             _Feature = _ExtentReport.CreateTest<Feature>(featureContext.FeatureInfo.Title);
         }
         [BeforeScenario]
-        public void BeforeScenario()
+        public void BeforeScenario(ScenarioContext scenarioContext)
         {
             IWebDriver driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
             _container.RegisterInstanceAs<IWebDriver>(driver);
+            _Scenario = _ExtentReport.CreateTest<Scenario>(scenarioContext.ScenarioInfo.Title);
         }
 
         [BeforeTestRun]
