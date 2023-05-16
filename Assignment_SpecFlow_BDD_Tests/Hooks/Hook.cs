@@ -81,7 +81,6 @@ namespace Assignment_SpecFlow_BDD_Tests.Hooks
             }
             else
             {
-                AddScreenShot(driver, scenarioContext);
                 if (stepType == "Given")
                 {
                     _Scenario.CreateNode<Given>(stepName).Fail(scenarioContext.TestError.Message,
