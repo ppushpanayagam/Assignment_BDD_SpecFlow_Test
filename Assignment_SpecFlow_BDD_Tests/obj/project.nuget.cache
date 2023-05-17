@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "YcWFMD0VA/yDcNsEYCRSrAW/uLjdy5DyPYcTWktZpPUHY4UESD4NhFkCCeKIgykm+6KdfLiXmKOjaktQ0xMLsw==",
+  "dgSpecHash": "YOklyP9iG7HeOfA5YyA7mCTWPtw6drL0Lt8fXfuPXipMk0tqkGj5WcxAuuHulsnlQn1JAWVK0JBJ2s7Fpwhk7A==",
   "success": true,
   "projectFilePath": "/Users/pushparajpushpanayagam/RiderProjects/Assignment_SpecFlow_BDD_Tests/Assignment_SpecFlow_BDD_Tests/Assignment_SpecFlow_BDD_Tests.csproj",
   "expectedPackageFiles": [
@@ -203,9 +203,7 @@
     "/Users/pushparajpushpanayagam/.nuget/packages/system.xml.xdocument/4.3.0/system.xml.xdocument.4.3.0.nupkg.sha512",
     "/Users/pushparajpushpanayagam/.nuget/packages/system.xml.xmldocument/4.3.0/system.xml.xmldocument.4.3.0.nupkg.sha512",
     "/Users/pushparajpushpanayagam/.nuget/packages/system.xml.xpath/4.3.0/system.xml.xpath.4.3.0.nupkg.sha512",
-    "/Users/pushparajpushpanayagam/.nuget/packages/system.xml.xpath.xdocument/4.3.0/system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
-    "/Users/pushparajpushpanayagam/.nuget/packages/microsoft.netcore.app.ref/3.1.0/microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
-    "/Users/pushparajpushpanayagam/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.10/microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512"
+    "/Users/pushparajpushpanayagam/.nuget/packages/system.xml.xpath.xdocument/4.3.0/system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }

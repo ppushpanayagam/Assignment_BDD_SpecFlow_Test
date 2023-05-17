@@ -16,7 +16,7 @@ public class CartPage
         Thread.Sleep(2000);
         var elements = driver.FindElements(ListOfCartItems).Count;
 
-        return elements;
+        return elements-1;
     }
 
     private By RemoveItemButton = By.XPath("//form/table/tbody/tr[1]/td[1]/a");

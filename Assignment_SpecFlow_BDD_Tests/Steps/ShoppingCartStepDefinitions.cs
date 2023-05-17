@@ -36,7 +36,7 @@ public class ShoppingCartStepDefinitions
     [Then(@"I find total four items listed in my cart")]
     public void ThenIFindTotalFourItemsListedInMyCart()
     {
-        Assert.AreEqual(5, _cartPage.VerifyAddedItemsList());
+        Assert.AreEqual(4, _cartPage.VerifyAddedItemsList());
     }
 
     [When(@"I search for lowest price item")]
@@ -54,6 +54,6 @@ public class ShoppingCartStepDefinitions
     [Then(@"I am able to verify three items in my cart")]
     public void ThenIAmAbleToVerifyThreeItemsInMyCart()
     {
-        Assert.AreEqual(4, _cartPage.VerifyAddedItemsList());
+        Assert.AreEqual(3, _cartPage.VerifyAddedItemsList());
     }
 }
